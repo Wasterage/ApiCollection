@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "6986c58f-74f2-468e-ab50-dc32dc373d52",
+		"name": "wasterage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "bindetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://35.239.136.7:8080/bin",
+					"protocol": "http",
+					"host": [
+						"35",
+						"239",
+						"136",
+						"7"
+					],
+					"port": "8080",
+					"path": [
+						"bin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newbin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"lat\": \"lati\",\r\n  \"lng\": \"long\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://35.239.136.7:8080/bin",
+					"protocol": "http",
+					"host": [
+						"35",
+						"239",
+						"136",
+						"7"
+					],
+					"port": "8080",
+					"path": [
+						"bin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "serverpost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://35.239.136.7:8081/bin/3",
+					"protocol": "http",
+					"host": [
+						"35",
+						"239",
+						"136",
+						"7"
+					],
+					"port": "8081",
+					"path": [
+						"bin",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "route",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cor\": \"lati\"\r\n}"
+				},
+				"url": {
+					"raw": "http://35.239.136.7:8081/bin",
+					"protocol": "http",
+					"host": [
+						"35",
+						"239",
+						"136",
+						"7"
+					],
+					"port": "8081",
+					"path": [
+						"bin"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
